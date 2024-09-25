@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+
+body {
+  font-family: "Lexend", sans-serif;
+}
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.hidden-tab {
+  display: none;
+}
