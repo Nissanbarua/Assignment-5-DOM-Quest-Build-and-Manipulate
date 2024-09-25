@@ -8,9 +8,8 @@ body {
   top: 0;
   z-index: 50;
 }
-.hidden-tab {
-  display: none;
-}
+
+
 #donation-btn:hover {
   background-color: #b4f461;
   cursor: pointer;
