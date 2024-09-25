@@ -11,3 +11,14 @@ body {
 .hidden-tab {
   display: none;
 }
+#donation-tab:hover {
+  background-color: #b4f461;
+  cursor: pointer;
+}
+#history-tab:hover {
+  background-color: #b4f461;
+  cursor: pointer;
+}
+#popup {
+  display: hidden;
+}
