@@ -20,7 +20,10 @@
         class="sticky-nav w-full mx-auto bg-[#F9F7F3] shadow-lg py-4 px-6 flex justify-between items-center"
       >
         <div class="flex items-center flex-1 w-1/2 justify-between">
-          <button id="blog-btn" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]">
+          <button
+            id="blog-btn"
+            class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#B4F461]"
+          >
             Blog
           </button>
           <h1 class="text-xl font-bold flex justify-center items-center">
@@ -40,12 +43,14 @@
       <div class="container mx-auto mt-6">
         <!-- Donation Tabs start-->
         <div class="flex justify-center space-x-4 mb-4">
-          <button id="donation-tab" class="btn btn-outline">Donation</button>
+          <button id="donation-tab" class="btn btn-outline btn-active">
+            Donation
+          </button>
           <button id="history-tab" class="btn btn-outline">History</button>
         </div>
         <!-- donation tabs end -->
         <!-- donation section start -->
-        <div id="donation-section" class="section">
+        <div id="donation-section" class="">
           <div class="space-y-6">
             <!-- Card 1 -->
             <div id="card1" class="hero border p-4 space-x-4">
@@ -79,14 +84,14 @@
                     positive impact on the lives of those in need.
                   </p>
                   <input
-                  id="donationAmount1"
+                    id="donationAmount1"
                     type="text"
                     placeholder="Write Donation Amount"
-                    class="input input-bordered w-full donation-amount"
+                    class="input input-bordered w-full donation-amount "
                   />
                   <div class="card-actions mt-4">
-                    <button
-                      class="donate-now btn btn-success bg-[#B4F461] donate-btn w-full"
+                    <button id="donate1"
+                      class=" btn btn-success bg-[#B4F461] donate-btn w-full"
                     >
                       Donate Now
                     </button>
@@ -129,7 +134,7 @@
                     consider donating today to assist those in urgent need.
                   </p>
                   <input
-                  id="donationAmount2"
+                    id="donationAmount2"
                     type="text"
                     placeholder="Write Donation Amount"
                     class="input input-bordered w-full donation-amount"
@@ -179,7 +184,7 @@
                     need.
                   </p>
                   <input
-                  id="donationAmount3"
+                    id="donationAmount3"
                     type="text"
                     placeholder="Write Donation Amount"
                     class="input input-bordered w-full donation-amount"
@@ -198,10 +203,15 @@
           </div>
         </div>
         <!-- donation section end -->
-      
+      </div>
+      <!-- history section start -->
+      <div id="history-section" class="hidden">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h2 class="text-2xl font-bold mb-4">Donation History</h2>
+          <ul id="history-list" class="space-y-4"></ul>
+        </div>
       </div>
       <!-- history section end -->
-     
     </main>
     <script src="./js/donatebd.js"></script>
   </body>
